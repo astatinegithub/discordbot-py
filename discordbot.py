@@ -30,8 +30,8 @@ async def on_message(message):
         word_count = len(word)
         
         if word_count == 2:
-            await asyncio.sleep(word[2])
-            await message.content.send(f"{message.author.mention}, {word[2]}초가 지났어요!")
+            asyncio.sleep(word[2])
+            message.content.send(f"{message.author.mention}, {word[2]}초가 지났어요!")
 
 
 try:
