@@ -27,7 +27,7 @@ async def on_message(message):
         
     if message.content.startswith(f"{PREFIX}타이머"):
         word = message.content.split()
-        await word_count = len(word)
+        word_count = len(word)
         
         if word_count == 2:
             await asyncio.sleep(word[2])
