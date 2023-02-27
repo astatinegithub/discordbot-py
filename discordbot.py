@@ -24,6 +24,14 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}안녕'):
         await message.channel.send(':wave:')
+        
+    if message.content.startswith(f"{PREFIX}타이머"):
+        await word = message.contesnt.split()
+        await word_count = len(word)
+        
+        if word_count == 2:
+            await asyncio.sleep(word[2])
+            await message.content.send(f"{message.author.mention}, {word[2]}초가 지났어요!")
 
 
 try:
