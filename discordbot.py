@@ -26,7 +26,7 @@ async def on_message(message):
         await message.channel.send(':wave:')
         
     if message.content.startswith(f"{PREFIX}타이머"):
-        await word = message.content.split()
+        word = message.content.split()
         await word_count = len(word)
         
         if word_count == 2:
