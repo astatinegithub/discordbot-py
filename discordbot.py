@@ -25,6 +25,9 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}안녕'):
         await message.channel.send(':wave:')
+
+    if message.content.startswith(f'{PREFIX}따라하기'):
+        await message.channel.send(message.content)
         
     if message.content.startswith(f"{PREFIX}타이머"):
         word = message.content.split()
